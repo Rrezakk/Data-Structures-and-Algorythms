@@ -1,15 +1,16 @@
-﻿namespace Linked_Lists;
+﻿using Linked_Lists;
+namespace Linked_Lists;
 
 public class SinglyLinkedList
 {
     private Node? _head;
     public bool IsEmpty => _head == null;
-    public void AddFirst(int value)
+    public void InsertHead(int value)
     {
         var toAdd = new Node(_head,value);
         _head = toAdd;
     }
-    public void AddLast(int data)
+    public void InsertTail(int data)
     {
         if (_head == null)
             _head = new Node(null,data);//First element in collection
@@ -23,6 +24,22 @@ public class SinglyLinkedList
             }
             current.Next = toAdd;//Insertion by linking with last element
         }
+    }
+    public bool InsertAfter(int pointerValue, int valueToInsert)
+    {
+        if (_head == null)
+            return false;
+        var current = _head;
+        while (current.Next != null)
+        {
+            if (current.Value == pointerValue)
+            {
+                current.Next = new Node(current.Next,valueToInsert);
+                return true;
+            }
+            current = current.Next;
+        }
+        return false;
     }
     public int DeleteByValue(int value)
     {
