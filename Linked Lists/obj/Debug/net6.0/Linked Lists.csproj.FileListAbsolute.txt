@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\bin\Debug\net6.0\Linked Lists.exe
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\bin\Debug\net6.0\Linked Lists.deps.json
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\bin\Debug\net6.0\Linked Lists.runtimeconfig.json
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\bin\Debug\net6.0\Linked Lists.dll
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\bin\Debug\net6.0\Linked Lists.pdb
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\Linked Lists.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\Linked Lists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\Linked Lists.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\Linked Lists.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\Linked Lists.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\Linked Lists.dll
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\refint\Linked Lists.dll
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\Linked Lists.pdb
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\Linked Lists.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Linked Lists\obj\Debug\net6.0\ref\Linked Lists.dll
