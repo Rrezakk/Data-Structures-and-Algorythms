@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d102911-4ca8-4a43-8b41-379d23278f5c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoublyLinkedList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Linked Lists/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Linked Lists/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SinglyLinkedList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SinglyLinkedList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Linked Lists.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Linked Lists.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Linked Lists.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Linked Lists.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Linked Lists.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Linked Lists.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Linked Lists.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Linked Lists.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Linked Lists.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Linked Lists.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Linked Lists.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Linked Lists.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Linked Lists.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Linked Lists.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675680142366</updated>
-      <workItem from="1675680147496" duration="1782000" />
+      <workItem from="1675680147496" duration="4677000" />
     </task>
     <servers />
   </component>

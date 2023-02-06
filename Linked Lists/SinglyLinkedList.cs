@@ -1,5 +1,4 @@
-﻿using Linked_Lists;
-namespace Linked_Lists;
+﻿namespace Linked_Lists;
 
 public class SinglyLinkedList
 {
