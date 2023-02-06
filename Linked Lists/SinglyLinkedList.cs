@@ -2,21 +2,21 @@
 
 public class SinglyLinkedList
 {
-    public Node? head;
-    public bool IsEmpty => head == null;
+    private Node? _head;
+    public bool IsEmpty => _head == null;
     public void AddFirst(int value)
     {
-        var toAdd = new Node(head,value);
-        head = toAdd;
+        var toAdd = new Node(_head,value);
+        _head = toAdd;
     }
     public void AddLast(int data)
     {
-        if (head == null)
-            head = new Node(null,data);//First element in collection
+        if (_head == null)
+            _head = new Node(null,data);//First element in collection
         else
         {
             var toAdd = new Node(null,data);
-            var current = head;
+            var current = _head;
             while (current.Next != null)//Iteration to last element
             {
                 current = current.Next;
@@ -24,16 +24,60 @@ public class SinglyLinkedList
             current.Next = toAdd;//Insertion by linking with last element
         }
     }
-    public int DeleteTail()
+    public int DeleteByValue(int value)
     {
-        throw new NotImplementedException();
+        if (_head == null)
+            return value;
+        if (_head.Value == value)
+        {
+            _head = _head.Next;
+            return value;
+        }
+        var current = _head;
+        while (current.Next != null)
+        {
+            if (current.Next.Value == value)
+            {
+                current.Next = current.Next.Next;
+                return value;
+            }
+            current = current.Next;
+        }
+        return value;
     }
-    public int DeleteHead()
+    public int? DeleteTail()
     {
-        throw new NotImplementedException();
+        if (_head == null)
+            return null;
+        if (_head.Next==null)
+        {
+            var value = _head.Value;
+            _head = null;
+            return value;
+        }
+        var current = _head;
+        while (current.Next != null)
+        {
+            if (current.Next.Next == null)
+            {
+                var value = current.Next.Value;
+                current.Next = null;
+                return value;
+            }
+            current = current.Next;
+        }
+        return null;
+    }
+    public int? DeleteHead()
+    {
+        if (_head == null)
+            return null;
+        var value = _head.Value;
+        _head = _head.Next;
+        return value;
     }
     public void Print() {
-        var current = head;
+        var current = _head;
         while (current != null) 
         {
             Console.WriteLine(current.Value);
