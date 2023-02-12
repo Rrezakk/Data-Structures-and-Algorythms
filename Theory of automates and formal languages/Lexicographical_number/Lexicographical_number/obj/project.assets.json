@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Lexicographical_number_lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Lexicographical_number_lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lexicographical_number_lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lexicographical_number_lib/1.0.0": {
+      "type": "project",
+      "path": "../../Lexicographical_number_lib/Lexicographical_number_lib/Lexicographical_number_lib.csproj",
+      "msbuildProject": "../../Lexicographical_number_lib/Lexicographical_number_lib/Lexicographical_number_lib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Lexicographical_number_lib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Data-Structures-and-Algorythms\\Theory of automates and formal languages\\Lexicographical_number\\Lexicographical_number\\Lexicographical_number.csproj",
+      "projectName": "Lexicographical_number",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Data-Structures-and-Algorythms\\Theory of automates and formal languages\\Lexicographical_number\\Lexicographical_number\\Lexicographical_number.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Data-Structures-and-Algorythms\\Theory of automates and formal languages\\Lexicographical_number\\Lexicographical_number\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Admin\\Desktop\\Data-Structures-and-Algorythms\\Theory of automates and formal languages\\Lexicographical_number_lib\\Lexicographical_number_lib\\Lexicographical_number_lib.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Data-Structures-and-Algorythms\\Theory of automates and formal languages\\Lexicographical_number_lib\\Lexicographical_number_lib\\Lexicographical_number_lib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
