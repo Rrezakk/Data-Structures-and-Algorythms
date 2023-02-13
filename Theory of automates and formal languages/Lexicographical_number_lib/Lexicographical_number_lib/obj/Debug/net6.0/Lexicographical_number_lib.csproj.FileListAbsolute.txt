@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\Lexicographical_number_lib.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\Lexicographical_number_lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\Lexicographical_number_lib.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\Lexicographical_number_lib.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\Lexicographical_number_lib.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\bin\Debug\net6.0\Lexicographical_number_lib.deps.json
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\bin\Debug\net6.0\Lexicographical_number_lib.dll
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\bin\Debug\net6.0\Lexicographical_number_lib.pdb
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\Lexicographical_number_lib.dll
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\refint\Lexicographical_number_lib.dll
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\Lexicographical_number_lib.pdb
+C:\Users\Admin\Desktop\Data-Structures-and-Algorythms\Theory of automates and formal languages\Lexicographical_number_lib\Lexicographical_number_lib\obj\Debug\net6.0\ref\Lexicographical_number_lib.dll

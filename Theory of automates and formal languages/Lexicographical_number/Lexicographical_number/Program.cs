@@ -1,10 +1,9 @@
 ﻿using Lexicographical_number;
+using Lexicographical_number_lib;
 
 Console.WriteLine("Lexicographical number calculations:");
 Main();
-
-
-string GetAlphabet()
+string GetAlphabetUserInput()
 {
     var alphabet = "";
     while (true)
@@ -26,7 +25,7 @@ string GetAlphabet()
     }
     return alphabet;
 }
-string GetWord(string alphabet)
+string GetWordUserInput(string alphabet)
 {
     var word = "";
     while (true)
@@ -44,45 +43,57 @@ string GetWord(string alphabet)
     }
     return word;
 }
+int GetLgNumberUserInput()
+{
+    var num = 0;
+    while (true)
+    {
+        Console.WriteLine($"Enter l-g number: ");
+        var n = Console.ReadLine();
+        if (int.TryParse(n, out num))
+        {
+            break;
+        }
+        else
+        {
+            Console.WriteLine($"Try again!");
+        }
+    }
+    return num;
+}
 void Main()
 {
-    var alphabet = GetAlphabet();
+    var alphabet = GetAlphabetUserInput();
     while (true)
     {
         Console.WriteLine($"Options: ");
         Console.WriteLine($"1: Get word's number");
         Console.WriteLine($"2: Get word by number");
         var input = Console.ReadLine();
-        try
+        switch (input)
         {
-            switch (input)
-            {
-                case "1":
-                    Console.WriteLine($"LG number is: {CalculateNumber(alphabet)}");
-                    break;
-                case "2":
-                    Console.WriteLine($"Word is: {CalculateWord(alphabet)}");
-                    break;
-                default:
-                    Console.WriteLine("wrong option");
-                    break;
-            }
+            case "1":
+                Console.WriteLine($"LG number is: {CalculateNumber(alphabet)}");
+                break;
+            case "2":
+                Console.WriteLine($"Word is: {CalculateWord(alphabet)}");
+                break;
+            default:
+                Console.WriteLine("wrong option");
+                break;
         }
-        catch (Exception e)
-        {
-            Console.WriteLine("wrong option");
-        }
+       
     }
-}
-int CalculateNumber(string alphabet)
-{
-    var word = GetWord(alphabet);
-    if (string.IsNullOrEmpty(word))
-        return 0;//empty word has 0 number
-    
-    throw new NotImplementedException();
-}
-string CalculateWord(string s)
-{
-    throw new NotImplementedException();
+
+    int CalculateNumber(string alphabet)
+    {
+        var word = GetWordUserInput(alphabet);
+        return LgCalculator.CalculateNumber(alphabet,word);
+    }
+
+    string CalculateWord(string alphabet)
+    {
+        var num = GetLgNumberUserInput();
+        return LgCalculator.CalculateWord(alphabet,num);
+    }
 }

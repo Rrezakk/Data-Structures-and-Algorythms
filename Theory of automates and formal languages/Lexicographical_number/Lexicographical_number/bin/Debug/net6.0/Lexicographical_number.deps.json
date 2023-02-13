@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Lexicographical_number/1.0.0": {
+        "dependencies": {
+          "Lexicographical_number_lib": "1.0.0"
+        },
+        "runtime": {
+          "Lexicographical_number.dll": {}
+        }
+      },
+      "Lexicographical_number_lib/1.0.0": {
+        "runtime": {
+          "Lexicographical_number_lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lexicographical_number/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lexicographical_number_lib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
