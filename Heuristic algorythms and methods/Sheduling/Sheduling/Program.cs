@@ -16,6 +16,139 @@ class Program
             {8,11,7},
             {12,14,11}
         };//GenerateMatrix(3, 3, 6, 15);
+        Program.First(matrix);
+        var matrix2 = new int[,]
+        {
+            { 9, 5, 7, 6, 1, 6, 8, 7 },
+            { 8, 10, 3, 9, 3, 4, 10, 7 },
+            { 6, 5, 4, 1, 3, 7, 8, 7 },
+            { 5, 7, 6, 10, 6, 7, 3, 1 },
+            { 5, 1, 3, 4, 7, 9, 2, 10 },
+            { 7, 8, 3, 5, 6, 9, 4, 8, },
+            { 8, 5, 6, 7, 5, 4, 3, 10 },
+            { 6, 3, 4, 4, 8, 6, 5, 2 }
+        };
+        Program.Second(matrix2);
+    }
+    public static void Second(int[,] matrix)
+    {
+        PrintMatrix2(matrix,out var rows,out var matrix2);
+        PrintMatrix2Simple(matrix2, out rows);
+    }
+    public static List<List<int>> CastMatrix(int[,] matrix)
+    {
+        var result = new List<List<int>>();
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            var row = new List<int>();
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                row.Add(matrix[i,j]);
+            }
+            result.Add(row);
+        }
+        return result;
+    }
+    public static int GetS(int[,] matrix)
+    {
+        var max = CastMatrix(matrix).Select(x=>x.Max()).Max();
+        var a = max-1;
+        var s = Math.Ceiling(Math.Log10(2) / Math.Log10((double)max - Math.Log10(a)))+1;
+        
+        Console.WriteLine($"Max: {max}");        
+        Console.WriteLine($"a: {a}");        
+        Console.WriteLine($"S: {s}");
+
+        return (int)s;
+    }
+    public static void PrintMatrix2Simple(int[,] matrix,out int[] row)
+    {
+        var s = Program.GetS(matrix);
+        var x = matrix.GetLength(0);
+        var y = matrix.GetLength(1);
+        row = new int[x];
+        Console.WriteLine("-------------------------------------");
+        Console.Write("     |");
+        for (int i = 0; i < y; i++)
+        {
+            Console.Write($"{$"p{i+1}",4}");
+        }
+        Console.WriteLine();
+        for (int i = 0; i < x; i++)
+        {
+            Console.Write($"{i,4} |");
+            var acc = 0;
+            var rw = new int[y];
+            for (var j = 0; j < y; j++)
+            {
+                rw[j] = matrix[i, j];
+                Console.Write($"{matrix[i,j],4}");
+                if (j == y-1)
+                {
+                    Console.Write($" | {acc}");
+                    row[i] = acc;
+                }
+                else
+                {
+                    var c = Math.Pow(matrix[i, j + 1],s) - Math.Pow(matrix[i, j],s);
+                    acc += (int)c;
+                }
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine("-------------------------------------");
+    }
+    public static void PrintMatrix2(int[,] matrix,out int[] row,out int[,] sorted)
+    {
+        var s = Program.GetS(matrix);
+        var x = matrix.GetLength(0);
+        var y = matrix.GetLength(1);
+        var fSort = new (int[], int)[x];
+        sorted = new int[x, y];
+
+        row = new int[x];
+        Console.WriteLine("-------------------------------------");
+        Console.Write("     |");
+        for (int i = 0; i < y; i++)
+        {
+            Console.Write($"{$"p{i+1}",4}");
+        }
+        Console.WriteLine();
+        for (int i = 0; i < x; i++)
+        {
+            Console.Write($"{i,4} |");
+            var acc = 0;
+            var rw = new int[y];
+            for (var j = 0; j < y; j++)
+            {
+                rw[j] = matrix[i, j];
+                Console.Write($"{matrix[i,j],4}");
+                if (j == y-1)
+                {
+                    Console.Write($" | {acc}");
+                    row[i] = acc;
+                    fSort[i] = (rw,acc);
+                }
+                else
+                {
+                    var c = Math.Pow(matrix[i, j + 1],s) - Math.Pow(matrix[i, j],s);
+                    acc += (int)c;
+                }
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine("-------------------------------------");
+        Sorting.gnomeSortCs(ref fSort);
+        for (int i = 0; i < sorted.GetLength(0); i++)
+        {
+            for (int j = 0; j < sorted.GetLength(1); j++)
+            {
+                sorted[i, j] = fSort[i].Item1[j];
+            }
+        }
+    }
+    public static void First(int[,] matrix)
+    {
         Program.PrintMatrix(matrix,out var fi,out var si);
         Program.PreSortFiSi(ref fi, ref si);
         Program.PrintArr(si, "I");
