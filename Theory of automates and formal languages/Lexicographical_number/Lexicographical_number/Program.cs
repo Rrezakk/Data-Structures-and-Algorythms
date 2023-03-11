@@ -1,5 +1,6 @@
 ﻿using Lexicographical_number;
 using Lexicographical_number_lib;
+using System.Text.RegularExpressions;
 
 Console.WriteLine("Lexicographical number calculations:");
 Main();
@@ -69,6 +70,7 @@ void Main()
         Console.WriteLine($"Options: ");
         Console.WriteLine($"1: Get word's number");
         Console.WriteLine($"2: Get word by number");
+        Console.WriteLine($"3: Regex table");
         var input = Console.ReadLine();
         switch (input)
         {
@@ -78,13 +80,31 @@ void Main()
             case "2":
                 Console.WriteLine($"Word is: {CalculateWord(alphabet)}");
                 break;
+            case "3":
+                Console.Write($"Enter words count: ");
+                var rowsStr = Console.ReadLine();
+                if (int.TryParse(rowsStr,out var rows))
+                {
+                    var x = alphabet.ToList();
+                    var mean = x.Select(c=>c-48).ToList();
+                    var sequences = SubsequenceGenerator.GenerateBinary(rows,mean);
+                    var regex = @"\d*00\d*";
+                    foreach (var sequence in sequences)
+                    {
+                        if (Regex.IsMatch(sequence, regex))
+                        {
+                            Console.WriteLine($"Regex match: {sequence} -> lg num: {LgCalculator.CalculateNumber(alphabet,sequence,false)}");
+                        }
+                    }
+                    Console.WriteLine($"Of total {sequences.Count} sequences");
+                }
+                break;
             default:
                 Console.WriteLine("wrong option");
                 break;
         }
        
     }
-
     int CalculateNumber(string alphabet)
     {
         var word = GetWordUserInput(alphabet);

@@ -8,7 +8,7 @@ public static class LgCalculator
     {
         return (int)Math.Pow(alphabetPower, wordPower - position);
     }
-    public static int CalculateNumber(string alphabet,string word)
+    public static int CalculateNumber(string alphabet, string word, bool clg = true)
     {
         if (string.IsNullOrEmpty(word))
             return 0;//empty word has 0 number
@@ -23,8 +23,11 @@ public static class LgCalculator
             var num = LgCalculator.Prefix(wordPosition, wlen, alen)
                       * alphabetPosition;
             acc += num;
-            Console.WriteLine($"alphabetPosition: {alphabetPosition} wordPosition: {wordPosition}");
-            Console.WriteLine($"for {c} num is {num}");
+            if (clg)
+            {
+                Console.WriteLine($"alphabetPosition: {alphabetPosition} wordPosition: {wordPosition}");
+                Console.WriteLine($"for {c} num is {num}");
+            }
         }
         return acc;
     }
